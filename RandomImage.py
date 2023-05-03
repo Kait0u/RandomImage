@@ -90,7 +90,13 @@ class RandomImage(PIL.Image.Image):
         """
         self.__init__(self.complexity, mode=self.mode, size=self.size, aa=self.aa, seed=self.image_seed)
 
-    def get_seed(self):
+    def get_imagedraw(self) -> PIL.ImageDraw.ImageDraw:
+        """
+        Returns the class' own ImageDraw object
+        """
+        return self.draw
+
+    def get_seed(self): 
         """
         Returns the current random number seed, or None if it doesn't exist
         """

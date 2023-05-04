@@ -3,7 +3,7 @@
 
 ## Usage
 
-Simply create an instance of the class. The constructor's got arguments familiar from Pillow, and a few new ones.
+Simply create an instance of the class. The constructor's got arguments familiar from Pillow's Image.new() method, and a few new ones.
 
 ```python
 __init__(self, complexity: int, mode = "RGBA", size = (__DEFAULT_DIM, __DEFAULT_DIM), aa = None, seed = None)
